@@ -18,19 +18,22 @@ function calculateBMI() {
   if (BMI < 18.5) {
     bmi_status.textContent = "Underweight";
     bmi_h2.textContent = BMI;
+     img_id.src='images/1.png'
     console.log("Underweight");
   } else if (18.5 <= BMI && BMI < 24.9) {
     bmi_status.textContent = "Normal weight";
     bmi_h2.textContent = BMI;
     console.log("Normal weight");
-    img_id.src='images/remove.png'
+    img_id.src='images/2.png'
   } else if (25 <= BMI && BMI < 29.9) {
     bmi_status.textContent = "Overweight";
     bmi_h2.textContent = BMI;
+     img_id.src='images/3.png'
     console.log("Overweight");
   } else {
     bmi_h2.textContent = BMI;
     bmi_status.textContent = "Obesity"
+     img_id.src='images/4.png'
     console.log("Obesity");
   }
 }
