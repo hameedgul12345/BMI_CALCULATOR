@@ -15,6 +15,7 @@
     border-radius: 4px;
     width: 30%;
     min-height:75vh ;
+    border: 2px solid  rgb(252, 4, 140);;
 }
 .input{
     width: 90%;

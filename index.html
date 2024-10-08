@@ -8,23 +8,23 @@
 </head>
 <body>
     <div class="main">
-       <div class="header" style="width: 100%; border-radius: 4px;">
-        <h1 style=" text-align: center; border: 1px solid black;border-radius: 4px;">BMI Calculator</h1>
+       <div class="header" style="width: 100%; border-radius: 4px; background-color: white;">
+        <h1 style=" text-align: center; border: 1px solid black;border-radius: 4px; padding: 8px 16px;">BMI Calculator</h1>
        </div>
        <div class="input">
         <div class="input1">
-            <label>Weight:</label>
-            <input type="text" placeholder="Enter Weight"  id="wg">
+            <label style="font-size: 14px;font-weight: 600;">Weight:</label>
+            <input type="number" style="font-size: 14px;font-weight: 600;"  id="wg">
             <!-- <button><img src="images/remove.png" style="width: 100px;" alt=""></button> -->
         </div>
         <div class="input2">
-            <label>Height:</label>
-            <input type="text" placeholder="Enter Height" id="hg">
+            <label style="font-size: 14px;font-weight: 600;">Height:</label>
+            <input type="number" style="font-size: 14px;font-weight: 600;" id="hg">
             <!-- <button><img src="images/remove.png" style="width: 100px;" alt=""></button> -->
         </div>
        </div>
        <div class="buttons">
-        <button class="btn1">
+        <button class="btn1" onclick="calculateBMI()">
             Calculate BMI
         </button>
         <button class="btn2">Reset</button>
