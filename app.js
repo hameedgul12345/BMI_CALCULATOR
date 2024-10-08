@@ -6,6 +6,8 @@ function calculateBMI() {
   
     console.log(Number(hg.value));
     console.log(Number(wg.value));
-   
+    if (Number(wg.value) <= 0 || Number(hg.value) <= 0) {
+        return alert("Please Provide a valid Weight Or Height");
+      }
   }
   
