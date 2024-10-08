@@ -3,6 +3,7 @@ function calculateBMI() {
   var hg = document.getElementById("hg");
   var bmi_status = document.getElementById("bmi_status");
   var bmi_h2 = document.getElementById("bmi_h2");
+  var img_id=document.getElementById('img_id')
 
   console.log(Number(hg.value));
   console.log(Number(wg.value));
@@ -11,7 +12,7 @@ function calculateBMI() {
   }
 
   var meter = Number(hg.value) * 0.3048;
-  var BMI = Number(wg.value) / (meter * meter);
+  var BMI = (Number(wg.value) / (meter * meter)).toFixed(2);
   console.log(BMI);
 
   if (BMI < 18.5) {
@@ -22,6 +23,7 @@ function calculateBMI() {
     bmi_status.textContent = "Normal weight";
     bmi_h2.textContent = BMI;
     console.log("Normal weight");
+    img_id.src='images/remove.png'
   } else if (25 <= BMI && BMI < 29.9) {
     bmi_status.textContent = "Overweight";
     bmi_h2.textContent = BMI;
