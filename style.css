@@ -3,10 +3,10 @@
   padding: 0%;
 }
 .main {
-  margin: 50px auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 20px;
   justify-content: start;
   align-items: self-start;
   background-color: rgb(236, 234, 234);
@@ -14,7 +14,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 4px;
   width: 30%;
-  min-height: 75vh;
+  min-height: 50vh;
   border: 2px solid rgb(252, 4, 140);
 }
 .input {
