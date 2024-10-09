@@ -1,7 +1,7 @@
 var bmi_h2 = document.getElementById("bmi_h2");
 window.onload=()=>{
      img_id.style.display='none';
-     alert('')
+   
   }
 
 // window.onload(()=>{
